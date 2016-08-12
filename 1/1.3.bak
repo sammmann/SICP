@@ -1,0 +1,11 @@
+#lang racket
+
+(define (sq x)
+  (* x x))
+
+(define (sos x y)
+  (+ (sq x) (sq y) ))
+
+(define (sq x y z)
+  (cond (and (> x y) (> y z)) (sos (x y))
+        ))
